@@ -1,0 +1,21 @@
+{% extends "base_with_menu.html" %}
+
+{% block links %}
+ <script src="static/controls.js"></script> 
+{% endblock %}
+
+
+{% block articles %}
+
+<article>
+	{% for ctrl in controls %}
+		<div class="group-control">
+			<p class="group-control-name">{{ ctrl.name }}</p>
+			{% for action in ctrl.actions %}
+				<input type="button" value="{{ action.name }}" onclick="activateAction({{ action.globalActionId }})"/>
+			{% endfor %}
+		</div>
+	{% endfor %}
+</article>
+
+{% endblock %}
