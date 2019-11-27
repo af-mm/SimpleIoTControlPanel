@@ -11,6 +11,25 @@ CFG = {
     },
     'controls': [
         {
+            'name': 'Time',
+            'mqttTopic': 'system/time',
+            'actions': [
+                {'name': '6:00', 'mqttMessage': '6:00:00'},
+                {'name': '12:00', 'mqttMessage': '12:00:00'},
+                {'name': '18:00', 'mqttMessage': '18:00:00'},
+                {'name': '24:00', 'mqttMessage': '24:00:00'}
+            ]
+        },
+        {
+            'name': 'Weather',
+            'mqttTopic': 'system/weather',
+            'actions': [
+                {'name': 'Clear', 'mqttMessage': 'clear'},
+                {'name': 'Raining', 'mqttMessage': 'raining'},
+                {'name': 'Thundering', 'mqttMessage': 'thundering'}
+            ]
+        },
+        {
             'name': 'All lights',
             'mqttTopic': 'room/allLights',
             'actions': [
@@ -57,7 +76,7 @@ CFG = {
             'mqttTopic': 'cmnd/ss1/POWER',
             'actions': [
                 {'name': 'Turn on', 'mqttMessage': 'on'},
-                {'name': 'Turn off', 'mqttMessage': 'off'},
+                {'name': 'Turn off', 'mqttMessage': 'off'}
             ]
         },
         {
@@ -65,7 +84,7 @@ CFG = {
             'mqttTopic': 'cmnd/ss2/POWER',
             'actions': [
                 {'name': 'Turn on', 'mqttMessage': 'on'},
-                {'name': 'Turn off', 'mqttMessage': 'off'},
+                {'name': 'Turn off', 'mqttMessage': 'off'}
             ]
         },
         {
@@ -73,7 +92,7 @@ CFG = {
             'mqttTopic': '01/light',
             'actions': [
                 {'name': 'Turn on', 'mqttMessage': 'turn on'},
-                {'name': 'Turn off', 'mqttMessage': 'turn off'},
+                {'name': 'Turn off', 'mqttMessage': 'turn off'}
             ]
         },
         {
@@ -81,7 +100,7 @@ CFG = {
             'mqttTopic': '02/light',
             'actions': [
                 {'name': 'Turn on', 'mqttMessage': 'turn on'},
-                {'name': 'Turn off', 'mqttMessage': 'turn off'},
+                {'name': 'Turn off', 'mqttMessage': 'turn off'}
             ]
         },
         {
@@ -89,7 +108,7 @@ CFG = {
             'mqttTopic': '03/light',
             'actions': [
                 {'name': 'Turn on', 'mqttMessage': 'turn on'},
-                {'name': 'Turn off', 'mqttMessage': 'turn off'},
+                {'name': 'Turn off', 'mqttMessage': 'turn off'}
             ]
         },
         {
@@ -97,7 +116,7 @@ CFG = {
             'mqttTopic': '04/light',
             'actions': [
                 {'name': 'Turn on', 'mqttMessage': 'turn on'},
-                {'name': 'Turn off', 'mqttMessage': 'turn off'},
+                {'name': 'Turn off', 'mqttMessage': 'turn off'}
             ]
         }
     ]

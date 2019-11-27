@@ -131,11 +131,19 @@ form input[type="submit"]{
 
 .group-control-name{
 	position: absolute;
-	top: -0.6rem;
+	top: -0.65rem;
 	left: 1rem;
 	display: inline-block;
 	padding: 0 0.2rem;
 	background-color: #fff;
+}
+
+.group-control input[type="button"] .success{
+	background-color: green;
+}
+
+.group-control input[type="button"] .failure{
+	background-color: red;
 }
 
 @media (min-aspect-ratio: 1/1){

@@ -12,7 +12,7 @@
 		<div class="group-control">
 			<p class="group-control-name">{{ ctrl.name }}</p>
 			{% for action in ctrl.actions %}
-				<input type="button" value="{{ action.name }}" onclick="activateAction({{ action.globalActionId }})"/>
+				<input id="a{{ action.globalActionId }}" type="button" value="{{ action.name }}" onclick="activateAction({{ action.globalActionId }})"/>
 			{% endfor %}
 		</div>
 	{% endfor %}
