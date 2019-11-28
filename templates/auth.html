@@ -2,12 +2,12 @@
 
 {% block articles %}
 <article>
-	<div class="auth-form">
-		<form method="post">
+	<div class="auth-form-container">
+		<form class="auth-form" method="post">
 			<p><input name="login" type="text" placeholder="Login"/></p>
 			<p><input name="password" type="password" placeholder="Password"/></p>
 			<p class="error-message">{{ errorMessage }}</p>
-			<p><input type="submit" value="Log in"/></p>
+			<p><input class="button" type="submit" value="Log in"/></p>
 		</form>
 	</div>
 </article>
