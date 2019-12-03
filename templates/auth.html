@@ -3,11 +3,11 @@
 {% block articles %}
 <article>
 	<div class="auth-form-container">
-		<form class="auth-form" method="post">
-			<p><input name="login" type="text" placeholder="Login"/></p>
-			<p><input name="password" type="password" placeholder="Password"/></p>
+		<form class="auth-form shine" method="post">
+			<p><input class="auth-form-input" name="login" type="text" placeholder="Login"/></p>
+			<p><input class="auth-form-input" name="password" type="password" placeholder="Password"/></p>
 			<p class="error-message">{{ errorMessage }}</p>
-			<p><input class="button" type="submit" value="Log in"/></p>
+			<p><input class="auth-form-input button" type="submit" value="Log in"/></p>
 		</form>
 	</div>
 </article>

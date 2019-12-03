@@ -9,11 +9,16 @@
 
 <article>
 	{% for ctrl in controls %}
-		<div class="group-control">
-			<p class="group-control-name">{{ ctrl.name }}</p>
-			{% for action in ctrl.actions %}
-				<input class="button" id="a{{ action.globalActionId }}" type="button" value="{{ action.name }}" onclick="activateAction({{ action.globalActionId }})"/>
-			{% endfor %}
+		<div class="work-panel">
+			<div class="work-panel-title">
+				<p>{{ ctrl.name }}</p>
+			</div>
+			
+			<div class="work-panel-data">
+				{% for action in ctrl.actions %}
+					<input class="work-panel-button" id="a{{ action.globalActionId }}" type="button" value="{{ action.name }}" onclick="activateAction({{ action.globalActionId }})"/>
+				{% endfor %}
+			</div>
 		</div>
 	{% endfor %}
 </article>
