@@ -1,13 +1,13 @@
 CFG = {
-    'port': 5000,
-    'debug': True,
+    'port':20020,
+    'debug': False,
     'secret_key': '12345678',
     'users': {
         'admin': {'password': 'admin'}
     },
     'mqtt': {
         'host': 'localhost',
-        'port': 44987
+        'port': 20021
     },
     'controls': [
         {
@@ -31,7 +31,7 @@ CFG = {
         },
         {
             'name': 'All lights',
-            'mqttTopic': 'room/allLights',
+            'mqttTopic': '/room/allLights',
             'actions': [
                 {'name': 'Turn on', 'mqttMessage': 'turn on'},
                 {'name': 'Turn off', 'mqttMessage': 'turn off'}
@@ -39,7 +39,7 @@ CFG = {
         },
         {
             'name': 'Lamp 1',
-            'mqttTopic': 'L01/light1',
+            'mqttTopic': '/room/light1',
             'actions': [
                 {'name': 'Turn off', 'mqttMessage': 'turn off'},
                 {'name': '10%', 'mqttMessage': '10'},
@@ -56,7 +56,7 @@ CFG = {
         },
         {
             'name': 'Lamp 2',
-            'mqttTopic': 'L01/light2',
+            'mqttTopic': '/room/light2',
             'actions': [
                 {'name': 'Turn off', 'mqttMessage': 'turn off'},
                 {'name': '10%', 'mqttMessage': '10'},
@@ -73,7 +73,7 @@ CFG = {
         },
         {
             'name': 'Smart Socket 1',
-            'mqttTopic': 'cmnd/ss1/POWER',
+            'mqttTopic': '/room/ss1',
             'actions': [
                 {'name': 'Turn on', 'mqttMessage': 'on'},
                 {'name': 'Turn off', 'mqttMessage': 'off'}
@@ -81,7 +81,7 @@ CFG = {
         },
         {
             'name': 'Smart Socket 2',
-            'mqttTopic': 'cmnd/ss2/POWER',
+            'mqttTopic': '/room/ss2',
             'actions': [
                 {'name': 'Turn on', 'mqttMessage': 'on'},
                 {'name': 'Turn off', 'mqttMessage': 'off'}
@@ -89,7 +89,7 @@ CFG = {
         },
         {
             'name': 'Intel Edison 1',
-            'mqttTopic': '01/light',
+            'mqttTopic': '/room/small_lamp1',
             'actions': [
                 {'name': 'Turn on', 'mqttMessage': 'turn on'},
                 {'name': 'Turn off', 'mqttMessage': 'turn off'}
@@ -97,7 +97,7 @@ CFG = {
         },
         {
             'name': 'Intel Edison 2',
-            'mqttTopic': '02/light',
+            'mqttTopic': '/room/small_lamp2',
             'actions': [
                 {'name': 'Turn on', 'mqttMessage': 'turn on'},
                 {'name': 'Turn off', 'mqttMessage': 'turn off'}
@@ -105,7 +105,7 @@ CFG = {
         },
         {
             'name': 'Intel Edison 3',
-            'mqttTopic': '03/light',
+            'mqttTopic': '/room/small_lamp3',
             'actions': [
                 {'name': 'Turn on', 'mqttMessage': 'turn on'},
                 {'name': 'Turn off', 'mqttMessage': 'turn off'}
@@ -113,7 +113,7 @@ CFG = {
         },
         {
             'name': 'Intel Edison 4',
-            'mqttTopic': '04/light',
+            'mqttTopic': '/room/small_lamp4',
             'actions': [
                 {'name': 'Turn on', 'mqttMessage': 'turn on'},
                 {'name': 'Turn off', 'mqttMessage': 'turn off'}
