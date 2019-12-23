@@ -72,6 +72,30 @@ CFG = {
             ]
         },
         {
+            'name': 'Relay Channel 1',
+            'mqttTopic': '/room/stand/relay/channel1',
+            'actions': [
+                {'name': 'Turn on', 'mqttMessage': 'on'},
+                {'name': 'Turn off', 'mqttMessage': 'off'}
+            ]
+        },
+        {
+            'name': 'Relay Channel 2',
+            'mqttTopic': '/room/stand/relay/channel2',
+            'actions': [
+                {'name': 'Turn on', 'mqttMessage': 'on'},
+                {'name': 'Turn off', 'mqttMessage': 'off'}
+            ]
+        },
+        {
+            'name': 'Relay Channel 3',
+            'mqttTopic': '/room/stand/relay/channel3',
+            'actions': [
+                {'name': 'Turn on', 'mqttMessage': 'on'},
+                {'name': 'Turn off', 'mqttMessage': 'off'}
+            ]
+        },
+        {
             'name': 'Smart Socket 1',
             'mqttTopic': '/room/ss1',
             'actions': [
@@ -82,6 +106,14 @@ CFG = {
         {
             'name': 'Smart Socket 2',
             'mqttTopic': '/room/ss2',
+            'actions': [
+                {'name': 'Turn on', 'mqttMessage': 'on'},
+                {'name': 'Turn off', 'mqttMessage': 'off'}
+            ]
+        },
+        {
+            'name': 'Smart Socket 3',
+            'mqttTopic': '/room/ss3',
             'actions': [
                 {'name': 'Turn on', 'mqttMessage': 'on'},
                 {'name': 'Turn off', 'mqttMessage': 'off'}
