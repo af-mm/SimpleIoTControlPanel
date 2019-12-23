@@ -41,7 +41,7 @@ CFG = {
             'name': 'Lamp 1',
             'mqttTopic': '/room/light1',
             'actions': [
-                {'name': 'Turn off', 'mqttMessage': 'turn off'},
+                {'name': 'Turn off', 'mqttMessage': '0'},
                 {'name': '10%', 'mqttMessage': '10'},
                 {'name': '20%', 'mqttMessage': '20'},
                 {'name': '30%', 'mqttMessage': '30'},
@@ -58,7 +58,7 @@ CFG = {
             'name': 'Lamp 2',
             'mqttTopic': '/room/light2',
             'actions': [
-                {'name': 'Turn off', 'mqttMessage': 'turn off'},
+                {'name': 'Turn off', 'mqttMessage': '0'},
                 {'name': '10%', 'mqttMessage': '10'},
                 {'name': '20%', 'mqttMessage': '20'},
                 {'name': '30%', 'mqttMessage': '30'},
