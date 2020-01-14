@@ -1,13 +1,15 @@
+import os
+
 CFG = {
-    'port':20020,
+    'port': int(os.getenv('WEB_SERVER_PORT', '20020')),
     'debug': False,
     'secret_key': '12345678',
     'users': {
         'admin': {'password': 'admin'}
     },
     'mqtt': {
-        'host': 'localhost',
-        'port': 20021
+        'host': os.getenv('MQTT_BROKER_HOST', 'localhost'),
+        'port': int(os.getenv('MQTT_BROKER_PORT', '20021'))
     },
     'controls': [
         {
@@ -153,3 +155,5 @@ CFG = {
         }
     ]
 }
+
+print(CFG)
