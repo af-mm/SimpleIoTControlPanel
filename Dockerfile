@@ -12,4 +12,4 @@ ENV WEB_SEVER_PORT=1024 \
 	MQTT_BROKER_HOST=localhost \
 	MQTT_BROKER_PORT=1024
 
-CMD [ "python3", "./app.py" ]
+CMD [ "python3", "-u", "app.py" ]

@@ -6,25 +6,12 @@ from flask import redirect
 from flask import url_for
 from random import uniform
 from config import CFG
-
 import paho.mqtt.publish as publish
-
-# import mysql.connector
 
 app = Flask(__name__, static_folder='static')
 
 stateOfSomething1 = 0
 stateOfSomething2 = 0
-
-@app.route('/123')
-def test():
-    return '''
-    <html>
-        <body>
-            <p>Hello, world!!!</p>
-        </body>
-    </html>
-    '''
 
 @app.route('/')
 def mainPage():
