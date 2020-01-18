@@ -175,7 +175,11 @@ def apiActivateAction():
         mqttMessage = CFG['controls'][param['iControl']]['actions'][param['iAction']]['mqttMessage']
         
         try:
-            publish.single(mqttTopic, mqttMessage, hostname=CFG['mqtt']['host'], port=CFG['mqtt']['port'])
+            publish.single( mqttTopic,
+                            mqttMessage,
+                            hostname=CFG['mqtt']['host'],
+                            port=CFG['mqtt']['port'],
+                            auth={'username': CFG['mqtt']['login'], 'password': CFG['mqtt']['password']})
         except Exception as e:
             print('ERROR: {}'.format(e))
             return {'result': 0}

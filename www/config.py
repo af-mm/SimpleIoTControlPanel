@@ -9,7 +9,9 @@ CFG = {
     },
     'mqtt': {
         'host': os.getenv('MQTT_BROKER_HOST', 'localhost'),
-        'port': int(os.getenv('MQTT_BROKER_PORT', '20021'))
+        'port': int(os.getenv('MQTT_BROKER_PORT', '20021')),
+        'login': os.getenv('MQTT_LOGIN', 'SimpleWeb'),
+        'password': os.getenv('MQTT_PSWD', '')
     },
     'controls': [
         {
