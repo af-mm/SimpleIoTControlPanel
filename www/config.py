@@ -124,6 +124,46 @@ CFG = {
             ]
         },
         {
+            'name': 'Smart Socket 4',
+            'mqttTopic': '/room/ss4',
+            'actions': [
+                {'name': 'Turn on', 'mqttMessage': 'on'},
+                {'name': 'Turn off', 'mqttMessage': 'off'}
+            ]
+        },
+        {
+            'name': 'Smart Socket 5',
+            'mqttTopic': '/room/ss5',
+            'actions': [
+                {'name': 'Turn on', 'mqttMessage': 'on'},
+                {'name': 'Turn off', 'mqttMessage': 'off'}
+            ]
+        },
+        {
+            'name': 'Smart Socket 6',
+            'mqttTopic': '/room/ss6',
+            'actions': [
+                {'name': 'Turn on', 'mqttMessage': 'on'},
+                {'name': 'Turn off', 'mqttMessage': 'off'}
+            ]
+        },
+        {
+            'name': 'Smart Socket 7',
+            'mqttTopic': '/room/ss7',
+            'actions': [
+                {'name': 'Turn on', 'mqttMessage': 'on'},
+                {'name': 'Turn off', 'mqttMessage': 'off'}
+            ]
+        },
+        {
+            'name': 'Smart Socket 8',
+            'mqttTopic': '/room/ss8',
+            'actions': [
+                {'name': 'Turn on', 'mqttMessage': 'on'},
+                {'name': 'Turn off', 'mqttMessage': 'off'}
+            ]
+        },
+        {
             'name': 'Intel Edison 1',
             'mqttTopic': '/room/small_lamp1',
             'actions': [
